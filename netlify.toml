@@ -3,8 +3,7 @@
 
 [build]
   command = "bun run build"
-  # Do NOT set publish if @netlify/plugin-nextjs is present; leave default or set to ".next" if needed
-  publish = ".next" # This is compatible if plugin is enabled
+  # publish = ".next"   # (REMOVED to avoid Netlify directory conflict)
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
